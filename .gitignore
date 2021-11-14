@@ -1,3 +1,8 @@
+offcenter_common
+offcenter_oanda
+offcenter_ota
+offcenter_trading
+
 # Prerequisites
 *.d
 
