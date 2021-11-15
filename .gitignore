@@ -3,6 +3,11 @@ offcenter_oanda
 offcenter_ota
 offcenter_trading
 
+# eclipse
+.cproject
+.project
+.settings
+
 # Prerequisites
 *.d
 
