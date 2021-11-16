@@ -40,3 +40,4 @@ offcenter_trading
 *.exe
 *.out
 *.app
+/build/

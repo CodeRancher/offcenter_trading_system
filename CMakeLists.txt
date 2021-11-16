@@ -23,5 +23,11 @@ message(STATUS "BUILD_COMBINED_DOC       ${BUILD_COMBINED_DOC}")
 add_subdirectory(offcenter_common)
 add_subdirectory(offcenter_oanda)
 add_subdirectory(offcenter_trading)
-add_subdirectory(offcenter_ota)
+
+# Only include offcenter_ota if it exists.
+# This project is not made available because of patents and proprietary content 
+if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/test")
+	add_subdirectory(offcenter_ota)
+endif()
+
 add_subdirectory(doc)
