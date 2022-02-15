@@ -963,7 +963,15 @@ EXCLUDE_SYMBOLS        =
 # that contain example code fragments that are included (see the \include
 # command).
 
-EXAMPLE_PATH           =
+EXAMPLE_PATH           =	@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_oanda/examples/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/amqp/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/amqp_server/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/imgui/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/program_options/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/rest_server/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/soci/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_common/lib/threading/example/ \
+							@CMAKE_CURRENT_SOURCE_DIR@/../offcenter_trading/lib/data_types/example/src/
 
 # If the value of the EXAMPLE_PATH tag contains directories, you can use the
 # EXAMPLE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp and

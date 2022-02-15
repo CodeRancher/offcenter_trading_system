@@ -1,3 +1,4 @@
+bin
 offcenter_common
 offcenter_oanda
 offcenter_ota
@@ -7,6 +8,9 @@ offcenter_trading
 .cproject
 .project
 .settings
+
+# log files
+*.log
 
 # Prerequisites
 *.d

@@ -18,6 +18,13 @@ message(STATUS "OFFCENTER_OTA_SRC_DIR       ${OFFCENTER_OTA_SRC_DIR}")
 option(BUILD_COMBINED_DOC "Build documentation" OFF)
 message(STATUS "BUILD_COMBINED_DOC       ${BUILD_COMBINED_DOC}")
 
+option(BUILD_INDIVIDUAL_DOC "Build individual documentation" OFF)
+message(STATUS "BUILD_INDIVIDUAL_DOC       ${BUILD_INDIVIDUAL_DOC}")
+
+if(BUILD_INDIVIDUAL_DOC)
+	set(BUILD_DOC ON)
+endif()
+
 ###############################################################################
 # sub projects
 add_subdirectory(offcenter_common)
@@ -26,7 +33,7 @@ add_subdirectory(offcenter_trading)
 
 # Only include offcenter_ota if it exists.
 # This project is not made available because of patents and proprietary content 
-if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/test")
+if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/offcenter_ota")
 	add_subdirectory(offcenter_ota)
 endif()
 
